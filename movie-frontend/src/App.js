@@ -7,6 +7,7 @@ import React from 'react';
 
 function App() {
 
+  //Starter med at tilføje et class til bodu når suden loades
   useEffect(() => {
     document.body.classList.add('main-body');
   });

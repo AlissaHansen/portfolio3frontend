@@ -6,9 +6,9 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../images/brandlogo.png';
 
-function NavbarComponent() {
+function NavbarComponent() { //Laver en responsive navbar der kollapser når vinduet bliver småt. Benytter routing til links
     return (
-        <Navbar bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand= "lg" bg="dark" variant="dark">
           <Container>
             <Navbar.Brand href="#home">
             <img 
@@ -21,13 +21,22 @@ function NavbarComponent() {
             {' '}
             MovieDB
             </Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+
             <Nav className="me-auto">
               <Nav.Link href="#home">Movies</Nav.Link>
               <Nav.Link href="#features">Actors</Nav.Link>
             </Nav>
+
+            <Nav>
+              <Nav.Link href="#login">Login</Nav.Link>
+              <Nav.Link href="#sign up"> Sign up</Nav.Link>
+            </Nav>
+
+            </Navbar.Collapse>
           </Container>
         </Navbar>
-        
     );
 };
 
