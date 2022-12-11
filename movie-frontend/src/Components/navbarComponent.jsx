@@ -4,40 +4,45 @@ import '../style.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavLink from 'react-bootstrap/NavLink';
 import logo from '../images/brandlogo.png';
 
-function NavbarComponent() { //Laver en responsive navbar der kollapser når vinduet bliver småt. Benytter routing til links
-    return (
-        <Navbar collapseOnSelect expand= "lg" bg="dark" variant="dark">
-          <Container>
-            <Navbar.Brand href="#home">
-            <img 
-            alt=" "
+//Laver en responsive navbar der kollapser når vinduet bliver småt. Benytter routing til links
+function NavbarComponent() {
+  return (
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="#home">
+          <img
+            alt="Billede af MovieBD logo "
             src={logo}
             width="30"
             height="30"
             className="d-inline-block align-top"
-            />
-            {' '}
-            MovieDB
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
+          />
+          {' '}
+          MovieDB
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
 
-            <Nav className="me-auto">
-              <Nav.Link href="#home">Movies</Nav.Link>
-              <Nav.Link href="#features">Actors</Nav.Link>
-            </Nav>
+          {/*Venstre side nav*/}
+          <Nav className="me-auto">
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/movies">Movies</NavLink>
+            <NavLink to="/actors">Actors</NavLink>
+          </Nav>
 
-            <Nav>
-              <Nav.Link href="#login">Login</Nav.Link>
-              <Nav.Link href="#sign up"> Sign up</Nav.Link>
-            </Nav>
+          {/*Højre side nav*/}
+          <Nav>
+            <NavLink to="/login">Log In</NavLink>
+            <NavLink to="/signup">Sign Up</NavLink>
+          </Nav>
 
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-    );
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 };
 
 export default NavbarComponent;
