@@ -1,3 +1,3 @@
-export default function Actors() {
+export default function Pricing() {
     return <h1>Actor page</h1>
   }

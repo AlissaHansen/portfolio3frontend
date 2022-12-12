@@ -1,3 +1,3 @@
-export default function Movies() {
-    return <h1>Movies Page</h1>
+export default function About() {
+    return <h1>Movie page</h1>
   }
