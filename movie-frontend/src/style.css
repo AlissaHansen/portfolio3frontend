@@ -1,7 +1,13 @@
 .main-body {
     background-color: #333;
+    color: white;
 }
 
 h1 {
     color: white;
+}
+
+.main-carousel {
+    background-color: blue;
+    margin-top: 3rem;
 }

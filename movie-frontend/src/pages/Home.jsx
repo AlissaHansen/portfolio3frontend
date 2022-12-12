@@ -1,3 +1,11 @@
-export default function Home() {
-    return <h1>Home</h1>
-  }
+import CarouselComponent from "../Components/CarouselComponent";
+
+function Home() {
+  return (
+    <div>
+      <CarouselComponent />
+    </div>
+  );
+};
+
+export default Home;
