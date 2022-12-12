@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 //Laver en responsive navbar der kollapser når vinduet bliver småt. Benytter routing til links
 function NavbarComponent() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
       <Container>
 
         <NavLink as={Link} className="NavLink" to="/">

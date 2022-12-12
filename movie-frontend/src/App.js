@@ -2,6 +2,7 @@ import './App.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 import NavbarComponent from './Components/NavbarComponent';
+import Footer from './Components/Footer';
 import { useEffect } from 'react';
 import React from 'react';
 import {Routes, Route} from 'react-router-dom';
@@ -32,6 +33,7 @@ function App() {
           <Route path="*" element={<Errorpage />} />
         </Routes>
       </div>
+      <Footer />
     </>
   )
 }

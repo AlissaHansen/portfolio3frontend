@@ -11,3 +11,9 @@ h1 {
     background-color: blue;
     margin-top: 3rem;
 }
+
+.main-footer {
+    background-color: black;
+    margin-top: 2rem;
+    padding: 1rem;
+}

@@ -1,8 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import image1 from '../images/image1.jpeg';
-import image2 from '../images/image2.jpeg';
-import image3 from '../images/image3.jpeg';
+import americanPsychoImage from '../images/americanPsycho.png';
+import avatarImage from '../images/avatar.png';
+import godfatherImage from '../images/godfather.png';
+import wakandaForeverImage from '../images/wakandaForever.png';
 
 function CarouselComponent() {
   return (
@@ -10,7 +11,7 @@ function CarouselComponent() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={image1}
+          src={americanPsychoImage}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -21,7 +22,7 @@ function CarouselComponent() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={image2}
+          src={avatarImage}
           alt="Second slide"
         />
 
@@ -33,7 +34,7 @@ function CarouselComponent() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={image3}
+          src={godfatherImage}
           alt="Third slide"
         />
 
@@ -42,6 +43,17 @@ function CarouselComponent() {
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={wakandaForeverImage}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          <h3>fourh slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
