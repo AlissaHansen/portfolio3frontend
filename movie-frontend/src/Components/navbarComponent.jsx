@@ -4,7 +4,7 @@ import '../style.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavLink from 'react-bootstrap/NavLink';
+import {NavLink} from 'react-router-dom';
 import logo from '../images/brandlogo.png';
 
 //Laver en responsive navbar der kollapser når vinduet bliver småt. Benytter routing til links

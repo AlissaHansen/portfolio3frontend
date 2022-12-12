@@ -21,18 +21,17 @@ function App() {
   return (
     <>
       <NavbarComponent />
-      <div>
+      <div className="container">
         <Routes>
-          <Route path= '/' element={<Home/>} />
-          <Route path= '/movies' element={<Movies/>} />
-          <Route path= '/actors' element={<Actors/>} />
-          <Route path= '/login' element={<LogIn/>} />
-          <Route path= '/signup' element={<SignUp/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/actors" element={<Actors />} />
+          <Route path="/login" element={<LogIn />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </div>
-
     </>
-  );
+  )
 }
 
 export default App;
