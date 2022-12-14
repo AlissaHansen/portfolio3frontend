@@ -1,7 +1,7 @@
 function Footer() {
     return (
       <footer className="main-footer">
-        ©2022 MovieDb All rights reserved
+        ©2022 MovieDB all rights reserved
       </footer>
     );
   };

@@ -15,8 +15,12 @@ function CarouselComponent() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>American Psycho</h3>
+          <p>
+            A wealthy New York City investment banking executive, Patrick Bateman, 
+            hides his alternate psychopathic ego from his co-workers and friends as 
+            he delves deeper into his violent, hedonistic fantasies..
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -27,8 +31,12 @@ function CarouselComponent() {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Avatar</h3>
+          <p>
+            A paraplegic Marine dispatched to the moon Pandora on a unique mission 
+            becomes torn between following his orders and protecting the world he feels
+            is his home.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -39,9 +47,10 @@ function CarouselComponent() {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Godfather</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          The aging patriarch of an organized crime dynasty in postwar New York City 
+          transfers control of his clandestine empire to his reluctant youngest son.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -52,8 +61,11 @@ function CarouselComponent() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>fourh slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Black Panther: Wakanda Forever</h3>
+          <p>
+            The people of Wakanda fight to protect their home from intervening 
+            world powers as they mourn the death of King T'Challa.
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
