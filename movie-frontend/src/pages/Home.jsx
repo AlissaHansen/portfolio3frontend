@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       <CarouselComponent />
-      <MovieComponent />
+      <MovieComponent pagesize={20} />
     </div>
   );
 };

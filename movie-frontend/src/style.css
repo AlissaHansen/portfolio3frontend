@@ -26,13 +26,22 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  .movie-container :hover {
+    border: medium dashed green;
+  }
   
 .movie {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 10px 20px;
+    transform: scale(1);
   }
+
+.movie.is-hovered {
+    transform: scale(1.2);  
+ }    
   
 .movie img {
     width: 200px;
@@ -41,4 +50,6 @@ h1 {
 .movie-title {
     margin-top: 10px;
   }
+
+
 

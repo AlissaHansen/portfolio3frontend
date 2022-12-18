@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from "react";
 
 
-const MovieComponent = () => {
+const MovieComponent = (props) => {
     const [movieData, setmovieData] = useState([])
+    const { pagesize } = props;
 
     useEffect(()=> {
-        const url = "http://localhost:5001/api/showInfos?pagesize=10";
+        const url = `http://localhost:5001/api/showInfos?pagesize=${pagesize}`;
 
         const fetchData = async() => {
             try {
@@ -18,7 +19,7 @@ const MovieComponent = () => {
             }
         };
         fetchData();
-    },[]);
+    },[pagesize]);
     
     return (
         <div className="movie-container">
@@ -29,6 +30,7 @@ const MovieComponent = () => {
             </div>
           ))}
         </div>
+
       );
     };
   
