@@ -12,6 +12,7 @@ import Movies from './pages/Movies';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Errorpage from './pages/Errorpage';
+import Movie from './pages/Movie';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/actors" element={<Actors />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/movie" element={<Movie />} />
           <Route path="*" element={<Errorpage />} />
         </Routes>
       </div>
