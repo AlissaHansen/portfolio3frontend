@@ -20,11 +20,17 @@ h1 {
     font-size: 0.7rem;
     font-style: italic;
 }
+.Home-movie-header {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
 .movie-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    
   }
 
   .movie-container :hover {
@@ -36,15 +42,13 @@ h1 {
     flex-direction: column;
     align-items: center;
     margin: 0 10px 20px;
-    transform: scale(1);
+    
   }
-
-.movie.is-hovered {
-    transform: scale(1.2);  
- }    
+ 
   
 .movie img {
     width: 200px;
+    height: 300px;
   }
   
 .movie-title {

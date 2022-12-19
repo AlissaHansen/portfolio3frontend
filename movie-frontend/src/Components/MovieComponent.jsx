@@ -3,10 +3,11 @@ import React, {useState, useEffect} from "react";
 
 const MovieComponent = (props) => {
     const [movieData, setmovieData] = useState([])
-    const { pagesize } = props;
+    const { pagesize, page } = props;
+
 
     useEffect(()=> {
-        const url = `http://localhost:5001/api/showInfos?pagesize=${pagesize}`;
+        const url = `http://localhost:5001/api/showInfos?pagesize=${pagesize}&page=${page}`;
 
         const fetchData = async() => {
             try {
@@ -19,17 +20,17 @@ const MovieComponent = (props) => {
             }
         };
         fetchData();
-    },[pagesize]);
+    },[pagesize, page]);
     
     return (
-        <div className="movie-container">
+        <container className="movie-container">
           {movieData.map((movie) => (
             <div className="movie" key={movie.id}>
               <img src={movie.poster} alt={`Poster for ${movie.title}`} />
               <div className="movie-title">{movie.primaryTitle}</div>
             </div>
           ))}
-        </div>
+        </container>
 
       );
     };

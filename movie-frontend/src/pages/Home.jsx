@@ -5,7 +5,8 @@ function Home() {
   return (
     <div>
       <CarouselComponent />
-      <MovieComponent pagesize={20} />
+      <h2 className="Home-movie-header">New movies to explore</h2>
+      <MovieComponent pagesize={10} page={7} />
     </div>
   );
 };
