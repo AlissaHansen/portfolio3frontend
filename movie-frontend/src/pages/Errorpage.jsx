@@ -1,3 +1,3 @@
 export default function Errorpage() {
-    return <h1>Error</h1>
+    return <h1>404: Page not found</h1>
   }
